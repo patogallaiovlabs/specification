@@ -15,7 +15,7 @@
 - [The key responsibilities of `ACE`](#the-key-responsibilities-of-ace)
   - [Separating proof validation and note registry interactions](#separating-proof-validation-and-note-registry-interactions)
 - [Contract Interactions](#contract-interactions)
-  - [Zero-knowledge dApp contract interaction, an example flow with bilateral swaps](#zero-knowledge-dapp-contract-interaction-an-example-flow-with-Swaps)
+  - [Zero-knowledge dApp contract interaction, an example flow with bilateral swaps](#zero-knowledge-dapp-contract-interaction-an-example-flow-with-bilateral-swaps)
   - [The rationale behind multilateral confidential transactions](#the-rationale-behind-multilateral-confidential-transactions)
 - [Validating an AZTEC proof](#validating-an-aztec-proof)
 - [Note registry implementation](#note-registry-implementation)
@@ -408,7 +408,7 @@ Restricting note registry updates to the creator of a given note registry provid
 
 ### Separating proof validation and note registry interactions  
 
-Because of these dual responsibilities, it might seem intuitive to roll proof validation and note registry updates into a single function. However, this would undermine one of the key strengths of the AZTEC protocol - that third party dApps can validate zero-knowledge proofs and send the resulting transfer instructions to AZTEC-compatible confidential assets. [Zero-knowledge dApp contract interaction, an example flow with bilateral swaps] (#zero-knowledge-dapp-contract-interaction-an-example-flow-with-Swaps) demonstrates this type of interaction and, consequently, the importance of separating proof validation from note registry updates.
+Because of these dual responsibilities, it might seem intuitive to roll proof validation and note registry updates into a single function. However, this would undermine one of the key strengths of the AZTEC protocol - that third party dApps can validate zero-knowledge proofs and send the resulting transfer instructions to AZTEC-compatible confidential assets. [Zero-knowledge dApp contract interaction, an example flow with bilateral swaps](#zero-knowledge-dapp-contract-interaction-an-example-flow-with-bilateral-swaps) demonstrates this type of interaction and, consequently, the importance of separating proof validation from note registry updates.
 
 # Contract Interactions  
 
